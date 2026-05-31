@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вікторина</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 520px;
+            margin: 40px auto;
+            padding: 0 16px;
+            color: #222;
+            background: #f4f7fb;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #d8dee6;
+            border-radius: 14px;
+            padding: 22px;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            margin: 0 0 14px;
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin: 0 0 12px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 14px;
+            font-size: 1rem;
+            border: 1px solid #c4cdd6;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 12px;
+            padding: 12px 18px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 10px;
+            background: #2563eb;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background: #9ca3af;
+            cursor: default;
+        }
+
+        .info {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        #resultText {
+            font-weight: 600;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Вікторина</h1>
+        <div id="questionArea">
+            <p id="questionText"></p>
+            <input id="answerInput" type="text" placeholder="Ваша відповідь" autocomplete="off" />
+            <button id="submitBtn" type="button">Відповісти</button>
+            <p class="info" id="progressText"></p>
+        </div>
+        <p id="resultText"></p>
+    </div>
+    <script src="HW1.js" defer></script>
+</body>
+</html>
